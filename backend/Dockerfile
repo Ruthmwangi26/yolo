@@ -1,8 +1,7 @@
 FROM mongo-express:latest
-RUN mkdir app
 WORKDIR /app 
-COPY package.json . 
-RUN npm install
+COPY package.json .
+RUN npm install --only=production
 
 COPY . .
 
