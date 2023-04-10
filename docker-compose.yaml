@@ -4,7 +4,7 @@ services:
     build:
       context: ./client
       dockerfile: Dockerfile
-    container_name: client_cc
+    container_name: yolo-client
     ports:
       - '3000:3000'
 
@@ -15,7 +15,7 @@ services:
     build: 
       context: ./backend
       dockerfile: Dockerfile
-    container_name: backend_cb
+    container_name: yolo-backend
     ports:
       - '5000:5000'
     volumes:

@@ -1,0 +1,2 @@
+.For Backend base image used mongo-express which requires Node.js v4 or higher. Since our client is running on version 13.12.0 or higher this worked well reducing the image size to 177mb.
+.The client image has been created using mulitistage to minimize on the size. This was done in two stages build stage and package stage. node:13.12.0-alpine was used for the two stages.
