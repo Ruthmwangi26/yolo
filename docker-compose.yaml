@@ -1,10 +1,8 @@
 version: "3"
 services:
   client:
-    build:
-      context: client
-      dockerfile: Dockerfile
     container_name: yolo-client
+    image: rwambui/yolo-client:1.0.0
     ports:
      - 3000:80
     depends_on:
@@ -14,10 +12,8 @@ services:
 
      
   backend:
-    build: 
-      context: backend
-      dockerfile: Dockerfile
     container_name: yolo-backend
+    image: rwambui/yolo-backend:1.0.0
     ports:
       - 5000:5000
   

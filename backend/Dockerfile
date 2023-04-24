@@ -1,8 +1,11 @@
-FROM mongo-express:latest
-WORKDIR /app 
-COPY package.json .
-RUN npm install --only=production
+FROM node:13.12.0-alpine
 
-COPY . .
+RUN mkdir -p /app
 
-CMD ["npm","start"]
+WORKDIR /app
+
+COPY . /app/
+
+RUN npm install
+
+CMD [ "npm", "start" ]
