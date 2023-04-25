@@ -4,6 +4,6 @@
 •	Application connected to mongo db that is creating volumes.
 •	Application https://github.com/Vinge1718/yolo forked and cloned.
 •	Instructions given on the read me followed and node and npm version amended by adding >= for the  client to run.
-•	Backed image tagged as rwambui/yolo-backend:1.0.0 and client as rwambui/yolo-client:1.0.0.
+•	Backed image tagged and pushed to docker hub as rwambui/yolo-backend:1.0.0 and client as rwambui/yolo-client:1.0.0.
 •	Yolo client running successfully and products added successfully.
 •	Added products are maintaintained and are visible both locally and mongo dB databases.
